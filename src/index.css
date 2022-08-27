@@ -18,9 +18,9 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.4);
 
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-width-lg: 63rem;
+  --container-width-md: 42rem;
+  --container-width-sm: 21rem;
 }
 
 html {
@@ -34,7 +34,6 @@ html {
 body {
   display: flex;
   height: 100vh;
-  align-items: center;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
   background-image: url(../src/assets/bg-texture.png), linear-gradient(135deg, var(--color-primary), var(--color-bg));
@@ -44,7 +43,9 @@ body {
 /* ===== genericos ====== */
 
 .container {
+  margin-top: 2rem;
   width: var(--container-width-lg);
+  min-height: 20rem;
   overflow: auto;
   border: 2px solid var(--color-primary);
   padding: 30px;
@@ -75,27 +76,6 @@ a:hover {
   color: var(--color-white);
 }
 
-.btn {
-  width: max-content;
-  display: inline-block;
-  color: var(--color-primary);
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
-  transition: var(--transition);
-}
-
-.btn:hover {
-  background: var(--color-white);
-  color: var(--color-bg);
-  border-color: transparent;
-}
-
-.btn-primary {
-  background: var(--color-primary);
-  color: var(--color-bg);
-}
 
 /* ============== Media Queries (Medium devices) ============== */
 @media screen and (max-width: 1024px) {
@@ -103,9 +83,6 @@ a:hover {
     width: var(--container-width-md);
   }
 
-  section {
-    margin-top: 5rem;
-  }
 }
 
 /* ============== Small Queries (Small devices) ============== */

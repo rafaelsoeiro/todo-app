@@ -3,9 +3,9 @@ import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import "./TaskDetails.css";
 
-import Button from "./Button";
+import Button from "../button/Button";
 
-const TaksDetails = (props) => {
+const TaskDetails = (props) => {
     const params = useParams();
     const { state } = useLocation();
     const navigate = useNavigate();
@@ -25,4 +25,4 @@ const TaksDetails = (props) => {
     );
 };
 
-export default TaksDetails;
+export default TaskDetails;
