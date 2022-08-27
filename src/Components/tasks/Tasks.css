@@ -1,0 +1,28 @@
+.task-container {
+    background-color: var(--color-bg-variant);
+    margin: 8px 0;
+    padding: 15px 20px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: var(--color-white);
+    align-items: center;
+    
+}
+
+.taks-title {
+    cursor: pointer;
+}
+
+.taks-remove-button, .see-task-detais-button {
+    border: none;
+    background: none;
+    color: var(--color-primary);
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: var(--transition);
+}
+.taks-remove-button:hover{
+    color: red;
+}
