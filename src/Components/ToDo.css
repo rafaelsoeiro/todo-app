@@ -1,0 +1,7 @@
+.todo-container{
+    width: 100%;
+    background: var(--color-bg-white);
+    /* border-radius: 1rem 1rem 0 0 ; */
+    padding: 8px 16px;
+    border: none;
+}

@@ -11,12 +11,21 @@
     border-radius: 5px;
     border: none;
     flex: 2;
-    background-color: var(--color-bg-variant);
-    color: var(--color-white);
+    background-color: var(--color-bg-white-variant);
+    color: var(--color-bg);
     font-size: 16px;
 }
 
 .add-task-button-container {
     margin-left: 10px;
-    flex: 1;
+    flex: 1 ;
 }
+
+.add-task-container>input {
+    font-weight: 600;
+}
+
+.add-task-container>input::placeholder {
+    color: var(--color-bg-variant);
+}
+

@@ -1,0 +1,15 @@
+.header-details {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    color: var(--color-bg);
+}
+
+
+.back-button-container {
+    flex: 1;
+    width: 30%;
+    margin-top: 10px;
+}

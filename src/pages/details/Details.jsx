@@ -1,13 +1,27 @@
-import React from 'react'
+import React from "react";
+import { useLocation, Link } from "react-router-dom";
 
-import TaskDetails from '../../Components/taskDetails/TaskDetails'
+import "./Details.css";
+import TaskDetails from "../../Components/taskDetails/TaskDetails";
+import Button from "../../Components/button/Button";
+import Header from "../../Components/header/Header";
+
 const Details = () => {
-  return (
-    <div className='Container'>
-      <h1>detalhes</h1>
-      <TaskDetails/>
-    </div>
-  )
-}
+    const { state } = useLocation();
+    console.log(state);
+    return (
+        <div className="container">
+            <div className="header-details">
+                <Header title="detalhes" />
+                <Link to="/">
+                    {/* state={props.state} */}
+                    <Button> Voltar </Button>
+                </Link>
+            </div>
+            <div className="details-container"></div>
+            <TaskDetails state={state} />
+        </div>
+    );
+};
 
-export default Details
+export default Details;

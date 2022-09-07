@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+
+import "./ToDo.css";
 
 import Header from "./header/Header";
 import AddTask from "./addTask/AddTask";
 import Tasks from "./tasks/Tasks";
 
 const ToDo = () => {
+    
     const [tasks, setTasks] = useState([
         {
             id: uuidv4(),
@@ -19,10 +22,10 @@ const ToDo = () => {
         const newTasks = [
             ...tasks,
             {
-                title: taskTitle,
                 id: uuidv4(),
-                completed: false,
+                title: taskTitle,
                 details: "Digite os detalhes da sua tarefa",
+                completed: false,
             },
         ];
         setTasks(newTasks);
@@ -42,16 +45,17 @@ const ToDo = () => {
 
         setTasks(newTasks);
     };
-
     return (
         <>
-            <Header />
-            <AddTask handleTaskAddition={handleTaskAddition} />
-            <Tasks
-                tasks={tasks}
-                handleTaskClick={handleTaskClick}
-                handleTaskRemoveButton={handleTaskRemoveButton}
-            />
+            <Header title="minhas tarefas" />
+            <div className="todo-container">
+                <AddTask handleTaskAddition={handleTaskAddition} />
+                <Tasks
+                    tasks={tasks}
+                    handleTaskClick={handleTaskClick}
+                    handleTaskRemoveButton={handleTaskRemoveButton}
+                />
+            </div>
         </>
     );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import {MdOutlineAdd } from 'react-icons/md'
+import { MdOutlineAdd } from "react-icons/md";
 
 import "./AddTask.css";
 import Button from "../button/Button";
@@ -13,7 +13,7 @@ const AddTask = ({ handleTaskAddition }) => {
     };
 
     const hadleAddTaskClick = () => {
-        if (inputData == "") {
+        if (inputData === "") {
             window.alert("Erro - Digite algo!");
         } else {
             handleTaskAddition(inputData);
@@ -24,6 +24,7 @@ const AddTask = ({ handleTaskAddition }) => {
     return (
         <div className="add-task-container">
             <input
+                placeholder="Digite sua tarefa aqui"
                 onChange={handleInputChange}
                 value={inputData}
                 className="add-task-input"
@@ -32,7 +33,9 @@ const AddTask = ({ handleTaskAddition }) => {
             />
 
             <div className="add-task-button-container">
-                <Button onClick={hadleAddTaskClick}><MdOutlineAdd/> </Button>
+                <Button onClick={hadleAddTaskClick}>
+                    <MdOutlineAdd />
+                </Button>
             </div>
         </div>
     );
