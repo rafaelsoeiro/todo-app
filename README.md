@@ -44,11 +44,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Autor
 
-<img alt="ARTHUR PC" title="ARTHUR PC" src="https://avatars.githubusercontent.com/u/103294767?v=4" height="100" width="100" />
+<img alt="rafael soeiro" title="rafael soeiro" src="https://avatars.githubusercontent.com/u/103294767?v=4" height="100" width="100" />
 
 Made with 💜 by Rafael Soeiro 👋
 
-[![LinkedIn Badge](https://img.shields.io/badge/-Rafael_Soeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/arthurpc03/)](https://www.linkedin.com/in/rafael-soeiro/)
+[![LinkedIn Badge](https://img.shields.io/badge/-Rafael_Soeiro-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafael-soeiro/)](https://www.linkedin.com/in/rafael-soeiro/)
 
 Footer
 © 2022 GitHub, Inc.
